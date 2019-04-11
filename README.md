@@ -6,7 +6,7 @@ Yet another unofficial speedtest.net client cli interface.
 
 It supports the new (undocumented) raw TCP protocol for better accuracy.
 
-What is different than volcan96: This is based on https://github.com/taganaka/SpeedTest but adds output to a single line, making writing to a file easier.
+What is different than https://github.com/taganaka/SpeedTest? This fork adds output to a single line, making writing to a file easier.
 
 ## Features
 
@@ -20,7 +20,7 @@ What is different than volcan96: This is based on https://github.com/taganaka/Sp
 
 5. Provide a URL to the speedtest.net share results image using option --share
 
-6. volcan96: This is based on https://github.com/taganaka/SpeedTest and adds output to a single line, making writing to a file easier.
+6. This is based on https://github.com/taganaka/SpeedTest and adds output to a single line, making writing to a file easier. See section on outputting to a file on MacOS.
 
 ## Installation
 
