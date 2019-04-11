@@ -32,8 +32,9 @@ It supports the new (undocumented) raw TCP protocol for better accuracy.
 
 ```
 $ brew install cmake
-$ cd cmake_build
-$ cmake -DCMAKE_BUILD_TYPE=Release ..
+$ mkdir ~/cmake_build
+$ cd ~/cmake_build
+$ cmake -DCMAKE_BUILD_TYPE=Release  # you can also put options after -DCMAKE but no options works
 $ make install
 ```
 
@@ -69,6 +70,10 @@ optional arguments:
   --output verbose|text       Set output type. Default: verbose
 $
 ```
+## Outputting to a file
+- pre-reqs: install moreutils
+$ brew install moreutils
+$  /usr/local/bin/SpeedTest --output text |  /usr/local/bin/ts '%Y-%m-%d %H:%M:%S,' | /usr/bin/tee -a /Users/spider/Google\\ Drive/SpeedTestPlus.csv
 
 ## License
 
