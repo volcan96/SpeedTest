@@ -2,7 +2,9 @@
 
 # SpeedTest++
 
-Yet another unofficial speedtest.net client cli interface
+Yet another unofficial speedtest.net client cli interface. 
+
+volcan96: This is based on https://github.com/taganaka/SpeedTest but adds output to a single line, making writing to a file easier.
 
 It supports the new (undocumented) raw TCP protocol for better accuracy.
 
@@ -17,6 +19,8 @@ It supports the new (undocumented) raw TCP protocol for better accuracy.
 4. Test supported: Ping / Jitter / Download speed / Upload speed / Packet loss (UDP).
 
 5. Provide a URL to the speedtest.net share results image using option --share
+
+6. volcan96: This is based on https://github.com/taganaka/SpeedTest and adds output to a single line, making writing to a file easier.
 
 ## Installation
 
