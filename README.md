@@ -76,11 +76,14 @@ $
 ```
 ## Outputting to a file on MacOS
 ```
-# pre-reqs: install homebrew and moreutils
-$ mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew # https://docs.brew.sh/Installation
-$ brew install moreutils #allows flexible timestamps
-# next line has 3 parts: 1) tells SpeedTest to run and output text 2) moreutils' ts to prepend a timestamp on Speedtest's output | writes/appends output to a file using tee (in this case to Google Drive
+# pre-reqs: install homebrew and moreutils (for timestamp formatting)
+# homebrew install - # https://docs.brew.sh/Installation
+$ mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+# moreutils install using homebrew. moreutils adds ts function allowing for flexible timestamps from command line
+$ brew install moreutils 
+# next command has 3 parts: 1) tells SpeedTest to run and output text 2) moreutils' ts to prepend a timestamp on Speedtest's output | writes/appends output to a file using tee (in this case to Google Drive
 $ /usr/local/bin/SpeedTest --output text |  /usr/local/bin/ts '%Y-%m-%d %H:%M:%S,' | /usr/bin/tee -a /Users/chungus/Google\\ Drive/SpeedTestPlus.csv
+# Pro Tip: Run the script on a schedule to save file to Google Drive. Then you can use Google Drive + BigQuery + Data Studio to create a fancy dashboard
 ```
 
 ## License
